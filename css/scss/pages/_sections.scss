@@ -76,22 +76,22 @@ section {
 // }
 
 
-.moved-image {
-    position: relative;
-    right: -410px;
-    animation: moveImage 2s ease forwards;
-    /* Animation duration, timing function, and fill mode */
-}
+// .moved-image {
+//     position: relative;
+//     right: -410px;
+//     animation: moveImage 2s ease forwards;
+//     /* Animation duration, timing function, and fill mode */
+// }
 
-@keyframes moveImage {
-    0% {
-        transform: translate(0, 0);
-    }
+// @keyframes moveImage {
+//     0% {
+//         transform: translate(0, 0);
+//     }
 
-    100% {
-        transform: translate(-400px, -20px);
-    }
-}
+//     100% {
+//         transform: translate(-400px, -20px);
+//     }
+// }
 
 .illustration-container_text_img img {
     width: 400px;
