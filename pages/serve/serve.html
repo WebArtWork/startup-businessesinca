@@ -1,0 +1,124 @@
+<div class="body">
+	<div class="container">
+		{% for section in sections %}
+			{% if section.component === 'Head' %}
+			<!-- sections -->
+			<section class="waw_section">
+				{% if section.thumb %}
+				<img src="{{{section.thumb}}}" />
+				{% endif %}
+				{% if section.name %}
+				<h1>{{{section.name}}}</h1>
+				{% endif %}
+				{% if section.description %}
+				<p>{{{section.description}}}</p>
+				{% endif %}
+			</section>
+			{% endif %}
+			{% if section.component === 'TextIllustration' %}
+			<!-- section with text on left, illustration on the right and button to navigate somewhere -->
+			<section class="section-container_text_img">
+				<div class="text-container_text_img">
+					{% if section.name %}
+					<h2>{{{section.name}}}</h2>
+					{% endif %}
+					{% if section.description %}
+					<p>{{{section.description}}}</p>
+					{% endif %}
+					{% if section.data.href %}
+					<a target="{{{section.data.href}}}">{{{section.data.a}}}</a>
+					{% endif %}
+				</div>
+				<div class="moved-image">
+					{% if section.thumb %}
+					<img src="{{{section.thumb}}}" />
+					{% endif %}
+				</div>
+			</section>
+			{% endif %}
+			{% if section.component === 'IllustrationText' %}
+			<!-- section with text on right, illustration on the left and button to navigate somewhere -->
+			<section class="section-container_img_text">
+				<div class="illustration-container_img_text">
+					{% if section.thumb %}
+					<img src="{{{section.thumb}}}" />
+					{% endif %}
+				</div>
+				<div class="text-container_img_text">
+					{% if section.name %}
+					<h2>{{{section.name}}}</h2>
+					{% endif %}
+					{% if section.description %}
+					<p>{{{section.description}}}</p>
+					{% endif %}
+					{% if section.data.href %}
+					<a target="{{{section.data.href}}}">{{{section.data.a}}}</a>
+					{% endif %}
+				</div>
+			</section>
+			{% endif %}
+			{% if section.component === 'Form' %}
+			<!-- section with wform -->
+			<section class="forms">
+				<form>
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" required />
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required />
+
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="4" required></textarea>
+
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+			{% endif %}
+			{% if section.component === 'People' %}
+			<!-- section with 3 blocks with image and name -->
+			<section class="block">
+				{% if section.name %}
+				<h2>{{{section.name}}}</h2>
+				{% endif %}
+				{% if section.description %}
+				<p>{{{section.description}}}</p>
+				{% endif %}
+				{% for profile in section.data.profiles %}
+				<div>
+					<img src="{{{profile.thumb}}}" alt="Person 1" />
+					<div class="name">
+						<h2>{{{profile.name}}}</h2>
+						<p>{{{profile.description}}}</p>
+					</div>
+				</div>
+				{% endfor %}
+			</section>
+			{% endif %}
+			{% if section.component === 'Plans' %}
+			<!-- section with 3 plans -->
+			<section class="plans">
+				{% if section.name %}
+				<h2>{{{section.name}}}</h2>
+				{% endif %}
+				{% if section.description %}
+				<p>{{{section.description}}}</p>
+				{% endif %}
+				{% for plan in section.data.plans %}
+				<div class="plan">
+					<h3>{{{plan.name}}}</h3>
+					<div class="price">${{{plan.price}}}{{{plan.perEmployee ? ' per employee' : ''}}} per month</div>
+					<div class="features">
+						{% for feature in plan.features %}
+						<p>{{{feature}}}</p>
+						{% endfor %}
+					</div>
+					{% if plan.url %}
+					<a href="plan.url">Choose Plan</a>
+					{% endif %}
+				</div>
+				{% endfor %}
+			</section>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
