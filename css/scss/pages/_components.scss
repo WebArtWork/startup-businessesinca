@@ -1,12 +1,7 @@
 @import "./variables";
 
-.body {
-  background-color: $body_color;
-}
 
 .container {
-  background-color: $body_color;
-  ;
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -161,8 +156,7 @@ section {
   height: 100vh;
 }
 
-.waw_components,
-h2 {
+.waw_components {
   text-align: center;
   color: $primary_color;
   padding: $p4;
