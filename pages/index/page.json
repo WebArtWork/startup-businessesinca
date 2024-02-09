@@ -1,3 +1,52 @@
 {
-	"title": "Cool Title"
+	"main": {
+		"name": "Businesses in Canada",
+		"thumb": "/businessesinca/img/canada-flag.jpg",
+		"description": "Your go-to platform for bringing ideas to life. With our user-friendly interface, you can effortlessly create projects and generate stunning websites to showcase your creativity and innovations.",
+		"advantages": [
+			{
+			"title": "Bring Your Ideas to Life",
+			"descr": "Got a brilliant idea? Share it with the world! Businesses in Canada empowers you to create projects that beautifully represent your concepts. Customize your website, add rich content, and make your ideas stand out in just a few clicks.",
+			"thumb": "/businessesinca/img/main/main-1.png",
+			"animationImg": "fade-left"
+			},
+			{
+			"title": "Effective Client Communication",
+			"descr": "Unlock the power of seamless communication. Our platform allows businesses to present their services with clarity and sophistication. Craft visually appealing websites to explain complex business logic to clients, leaving a lasting impression.",
+			"thumb": "/businessesinca/img/main/main-2.png",
+			"animationImg": "fade-right"
+			},
+			{
+			"title": "Streamline Employee Training",
+			"descr": "Illustrate how businesses can create guides to explain internal processes and workflows to employees. Emphasize the clarity and accessibility of the platform for creating instructional materials.",
+			"thumb": "/businessesinca/img/main/main-3.png",
+			"animationImg": "fade-left"
+			},
+			{
+			"title": "Stay Connected with Your Audience",
+			"descr": "Showcase how businesses can use the platform for announcements and updates. Highlight the immediacy and impact of sharing important information through generated websites.",
+			"thumb": "/businessesinca/img/main/main-4.png",
+			"animationImg": "fade-right"
+			},
+			{
+			"title": "Strategize for Success",
+			"descr": "Illustrate how your platform aids businesses in planning and visualizing future improvements. Emphasize the collaborative features for team input on future projects.",
+			"thumb": "/businessesinca/img/main/main-5.png",
+			"animationImg": "fade-left"
+			},
+			{
+			"title": "Create Your Brand Merchandise",
+			"descr": "Detail how businesses can use the platform to design and showcase merchandise. Highlight the e-commerce integration for seamless merchandise sales.",
+			"thumb": "/businessesinca/img/main/main-6.png",
+			"animationImg": "fade-right"
+			},
+			{
+			"title": "What we do",
+			"descr": "This is a sample text. You can replace it with your own content.",
+			"thumb": "/businessesinca/img/main/main-3.png",
+			"animationImg": "fade-left"
+			}
+			
+		]
+	}
 }
