@@ -32,6 +32,7 @@
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  font-weight: 600;
   background-color: #ff0000;
   padding: 15px 30px;
   border-radius: 5px;
@@ -40,15 +41,19 @@
   &:hover {
     background-color: #ff3737;
   }
+
+  @media (max-width: 490px) {
+    min-width: 120px;
+    padding: 10px 20px;
+  }
 }
 
 /* ------------------------ /btn ------------------------ */
 
-/* ------------------------ waw_section ------------------------ */
+/* ------------------------ waw ------------------------ */
 
 .waw {
   background-color: #fdeded;
-  height: 100vh;
 
   &__container {
     height: 100vh;
@@ -90,7 +95,7 @@
     margin-bottom: 60px;
   }
 
-  .waw-btn a{
+  .waw-btn a {
     margin-bottom: 120px;
   }
 
@@ -101,15 +106,99 @@
   }
 }
 
-/* ------------------------ /waw_section ------------------------ */
+@media (max-width: 1200px) {
+  .waw {
+    &__container {
+      justify-content: center;
+    }
 
+    &__img-title {
+      h1 {
+        font-size: $fs4 * 2.5;
+      }
+    }
+
+    &__descr {
+      max-width: 800px;
+      margin-top: 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .waw {
+    &__img-title {
+      h1 {
+        font-size: $fs4 * 1.8;
+      }
+    }
+
+    &__descr {
+      max-width: 700px;
+      font-size: 20px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .waw {
+    &__img-title {
+      margin: 80px 0;
+
+      h1 {
+        font-size: $fs4 * 1.2;
+      }
+    }
+
+    &__descr {
+      max-width: 500px;
+      font-size: 18px;
+    }
+
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .waw {
+    &__img-title {
+      margin: 80px 0;
+
+      h1 {
+        font-size: $fs4;
+      }
+    }
+
+    &__descr {
+      max-width: 400px;
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 40px;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+}
+
+/* ------------------------ /waw ------------------------ */
 
 /* ------------------------ advantages ------------------------ */
 
-.advantages__wrapper{
-    &:nth-child(even) {
-        background-color: #fdeded;
-      }
+.advantages__wrapper {
+  &:nth-child(even) {
+    background-color: #fdeded;
+  }
 }
 
 .advantages-item {
@@ -143,8 +232,101 @@
   }
 }
 
-/* ------------------------ /advantages ------------------------ */
+.advantages__wrapper:nth-child(even) .advantages-item {
+  flex-direction: row-reverse;
+  }
 
+@media (max-width: 1290px){
+  .advantages-item__img {
+    img {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (max-width: 1075px){
+  .advantages-item__img {
+    img {
+      max-width: 320px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .advantages-item__text {
+    max-width: 500px;
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+      padding-bottom: 30px;
+    }
+  }
+
+  .advantages-item__img {
+    img {
+      max-width: 300px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+
+  .advantages-item {
+    flex-direction: column;
+  }
+
+  .advantages__wrapper:nth-child(even) .advantages-item {
+    flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+  .advantages-item {
+    justify-content: center;
+    gap: 20px;
+
+    &__img {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .advantages-item__img {
+    img {
+      max-width: 250px;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .advantages-item__img {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  .advantages-item__text {
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+/* ------------------------ /advantages ------------------------ */
 
 .forms {
   display: flex;
